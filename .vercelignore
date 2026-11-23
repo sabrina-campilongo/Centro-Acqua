@@ -1,0 +1,11 @@
+.git
+node_modules
+*.jpeg
+*.JPEG
+outdoor-2.jpg
+outdoor-3.jpg
+yoga-facial-1.jpg
+opt.ps1
+retouch.ps1
+inspect*.ps1
+*.log

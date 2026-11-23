@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
-  --logo-mid:#6EAD2F; --logo-light:#A8D93A; --logo-dark:#3E6E1E;
-  --green-900:#1E3A12; --green-700:#5A9A22; --green-500:#7FC233;
-  --cream:#FDFCF8; --text:#1A2E12; --muted:#5A6B4E;
+  --logo-mid:#4A8A34; --logo-light:#C0E068; --logo-dark:#205030;
+  --green-900:#103820; --green-700:#205030; --green-500:#4A8A34;
+  --cream:#FDFCF8; --text:#183020; --muted:#4A5D4E;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -30,10 +30,10 @@ img{display:block;width:100%;object-fit:cover}
 /* HERO */
 .hero{
   min-height:100svh;
-  background:linear-gradient(135deg,#4A881E 0%,#6EAD2F 38%,#8AC93A 68%,#C2E66A 100%);
+  background:linear-gradient(135deg,#184828 0%,#205030 32%,#4A8A34 65%,#C8E878 100%);
   position:relative;overflow:hidden;display:flex;flex-direction:column;color:#fff;
 }
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 500px at 12% 18%,rgba(255,255,255,.18) 0%,transparent 60%),radial-gradient(600px 600px at 88% 88%,rgba(255,255,255,.12) 0%,transparent 60%);pointer-events:none}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 500px at 12% 18%,rgba(255,255,255,.14) 0%,transparent 60%),radial-gradient(600px 600px at 88% 88%,rgba(16,56,32,.16) 0%,transparent 62%);pointer-events:none}
 .hero-inner{flex:1;max-width:900px;width:100%;margin:0 auto;padding:92px 20px 48px;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;z-index:1;text-align:center}
 .hero-top{text-align:center;animation:fadeIn 900ms ease both;max-width:720px;width:100%}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);margin-bottom:20px}
@@ -43,7 +43,7 @@ img{display:block;width:100%;object-fit:cover}
 .hero-desc{margin:18px auto 0;max-width:640px;font-size:15px;line-height:1.65;color:rgba(255,255,255,.97);font-weight:500;text-shadow:0 1px 10px rgba(0,0,0,.12)}
 .hero-desc strong{font-weight:800;color:#fff}
 .hero-cta{margin:26px auto 0;display:inline-flex;align-items:center;gap:10px;background:var(--green-900);color:#fff;padding:16px 28px;border-radius:999px;font-weight:800;font-size:15px;box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .2s}
-.hero-cta:hover{transform:translateY(-2px);background:#12260E}
+.hero-cta:hover{transform:translateY(-2px);background:#0A2518}
 .hero-cta span{width:28px;height:28px;border-radius:50%;background:#fff;color:var(--green-900);display:grid;place-items:center;font-size:14px}
 @keyframes fadeIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 .anim-2{animation:fadeIn 800ms 140ms ease both}
@@ -54,29 +54,29 @@ img{display:block;width:100%;object-fit:cover}
 /* SECCIONES GENERALES */
 .section{padding:52px 20px;max-width:1280px;margin:0 auto}
 .section-head{text-align:center;margin-bottom:28px}
-.kicker{display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--logo-dark);font-weight:800;background:#F4FADF;border:1px solid #DCEEA8;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.kicker{display:inline-block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--logo-dark);font-weight:800;background:#EDF5DC;border:1px solid #D2E3A0;padding:6px 12px;border-radius:999px;margin-bottom:14px}
 .h2{font-family:'Instrument Serif',serif;font-size:clamp(30px,6vw,46px);line-height:.95;letter-spacing:-.03em;font-weight:400}
 .h2 em{font-style:italic;color:var(--logo-mid)}
 .lead{color:var(--muted);font-size:15px;line-height:1.7;max-width:680px;margin:12px auto 0}
 @media(min-width:900px){.section{padding:68px 32px}}
 /* SOBRE */
-.sobre{display:grid;gap:28px;background:#fff;border:1px solid #EDECC6;border-radius:28px;padding:28px 20px;box-shadow:0 12px 40px rgba(62,110,30,.08)}
+.sobre{display:grid;gap:28px;background:#fff;border:1px solid #E3EBD2;border-radius:28px;padding:28px 20px;box-shadow:0 12px 40px rgba(62,110,30,.08)}
 .sobre-media{position:relative;display:flex;justify-content:center;align-items:center}
-.sobre-circle{width:240px;height:240px;border-radius:50%;background:#fff;border:4px solid #fff;box-shadow:0 18px 40px rgba(110,173,47,.18),0 0 0 8px #F4FADF;overflow:hidden;padding:10px;display:grid;place-items:center}
+.sobre-circle{width:240px;height:240px;border-radius:50%;background:#fff;border:4px solid #fff;box-shadow:0 18px 40px rgba(110,173,47,.18),0 0 0 8px #EDF5DC;overflow:hidden;padding:10px;display:grid;place-items:center}
 .sobre-circle img{width:100%;height:100%;object-fit:contain;border-radius:50%}
 .sobre-badge{position:absolute;bottom:6px;right:50%;transform:translateX(70px);background:var(--green-900);color:#fff;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 8px 20px rgba(0,0,0,.14)}
 .sobre-text h3{font-family:'Instrument Serif',serif;font-size:26px;line-height:1.05;font-weight:400;margin-bottom:12px}
 .sobre-text p{color:var(--muted);font-size:14.5px;line-height:1.8;margin-bottom:12px}
 .sobre-list{display:grid;gap:10px;margin-top:14px}
 .sobre-item{display:flex;gap:10px;align-items:flex-start;font-size:13.5px}
-.sobre-item i{width:26px;height:26px;border-radius:50%;background:#F4FADF;border:1px solid #DCEEA8;display:grid;place-items:center;flex-shrink:0;color:var(--logo-dark);font-style:normal;font-size:12px;font-weight:800}
+.sobre-item i{width:26px;height:26px;border-radius:50%;background:#EDF5DC;border:1px solid #D2E3A0;display:grid;place-items:center;flex-shrink:0;color:var(--logo-dark);font-style:normal;font-size:12px;font-weight:800}
 .sobre-actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
-.btn-outline{padding:12px 18px;border-radius:999px;border:1px solid #D9E9A8;background:#fff;font-weight:700;font-size:13px}
+.btn-outline{padding:12px 18px;border-radius:999px;border:1px solid #D2E3A0;background:#fff;font-weight:700;font-size:13px}
 .btn-dark{padding:12px 18px;border-radius:999px;background:var(--green-900);color:#fff;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px}
 @media(min-width:900px){.sobre{grid-template-columns:400px 1fr;align-items:center;padding:36px;gap:36px}.sobre-circle{width:300px;height:300px}.sobre-badge{right:12px;transform:none}}
 /* SERVICIOS - 4 cards */
 .services-grid{display:grid;gap:16px}
-.card{background:#fff;border:1px solid #EDECC6;border-radius:22px;overflow:hidden;box-shadow:0 8px 30px rgba(62,110,30,.06);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card{background:#fff;border:1px solid #E3EBD2;border-radius:22px;overflow:hidden;box-shadow:0 8px 30px rgba(62,110,30,.06);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
 .card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(62,110,30,.12)}
 .card-img{height:190px;overflow:hidden;position:relative}
 .card-img img{height:100%;transition:transform .5s}
@@ -86,12 +86,12 @@ img{display:block;width:100%;object-fit:cover}
 .card-body h3{font-size:15.5px;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
 .card-body p{font-size:13.5px;color:var(--muted);line-height:1.6;flex:1}
 .card-meta{margin-top:12px;display:flex;align-items:center;justify-content:space-between;font-size:11.5px;color:var(--logo-dark);font-weight:700}
-.card-arrow{width:28px;height:28px;border-radius:50%;background:#F4FADF;border:1px solid #DCEEA8;display:grid;place-items:center;font-size:12px}
+.card-arrow{width:28px;height:28px;border-radius:50%;background:#EDF5DC;border:1px solid #D2E3A0;display:grid;place-items:center;font-size:12px}
 @media(min-width:640px){.services-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.services-grid{grid-template-columns:repeat(4,1fr)} .card-img{height:175px}}
+@media(min-width:1024px){.services-grid{grid-template-columns:repeat(3,1fr)} .card-img{height:175px}}
 /* CONTACTO */
 .contact-wrap{display:grid;gap:18px}
-.contact-info{background:linear-gradient(160deg,#1E3A12 0%,#3F6B22 55%,#6EAD2F 100%);color:#fff;border-radius:24px;padding:24px;position:relative;overflow:hidden}
+.contact-info{background:linear-gradient(160deg,#103820 0%,#205030 55%,#4A8A34 100%);color:#fff;border-radius:24px;padding:24px;position:relative;overflow:hidden}
 .contact-info::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.06);top:-90px;right:-90px}
 .contact-info h3{font-family:'Instrument Serif',serif;font-size:28px;line-height:1;font-weight:400;position:relative}
 .contact-info p{font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.86);margin-top:10px;position:relative}
@@ -100,18 +100,18 @@ img{display:block;width:100%;object-fit:cover}
 .contact-item i{width:36px;height:36px;border-radius:50%;background:#fff;color:var(--green-900);display:grid;place-items:center;flex-shrink:0;font-style:normal;font-weight:800;font-size:13px}
 .contact-item b{font-size:13px}
 .contact-item span{font-size:12px;opacity:.88;display:block}
-.form-card{background:#fff;border:1px solid #EDECC6;border-radius:24px;padding:20px;box-shadow:0 12px 40px rgba(62,110,30,.06)}
+.form-card{background:#fff;border:1px solid #E3EBD2;border-radius:24px;padding:20px;box-shadow:0 12px 40px rgba(62,110,30,.06)}
 .form-card h3{font-size:17px;font-weight:800}
 .form-card > p{font-size:13px;color:var(--muted);margin:6px 0 18px}
 .form-grid{display:grid;gap:14px}
 @media(min-width:620px){.form-grid.two{grid-template-columns:1fr 1fr}}
 label{font-size:12px;font-weight:700;color:var(--text);display:block;margin-bottom:6px}
 label span{color:#DC2626;margin-left:4px}
-input, textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #E2E8C8;background:#FDFDFB;font-family:inherit;font-size:14px;color:var(--text);outline:none;transition:border .2s,box-shadow .2s}
+input, textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #DCE6CC;background:#FDFDFB;font-family:inherit;font-size:14px;color:var(--text);outline:none;transition:border .2s,box-shadow .2s}
 input:focus, textarea:focus{border-color:var(--logo-mid);box-shadow:0 0 0 4px rgba(110,173,47,.15);background:#fff}
 textarea{resize:vertical;min-height:110px}
 .btn-submit{width:100%;padding:15px;border-radius:999px;border:none;background:var(--green-900);color:#fff;font-weight:800;font-size:14.5px;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;box-shadow:0 10px 22px rgba(30,58,18,.18);transition:background .2s,transform .15s}
-.btn-submit:hover{background:#12260E;transform:translateY(-1px)}
+.btn-submit:hover{background:#0A2518;transform:translateY(-1px)}
 .form-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px}
 @media(min-width:900px){.contact-wrap{grid-template-columns:380px 1fr;align-items:start}.contact-info{padding:28px;position:sticky;top:20px}.form-card{padding:26px}}
 /* FOOTER */
@@ -132,7 +132,7 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
 .wa-pulse::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;animation:pulse 2s infinite;z-index:-1}
 @keyframes pulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.35);opacity:0}100%{transform:scale(1.35);opacity:0}}
 @media(min-width:900px){.wa-float{right:22px;bottom:22px;width:60px;height:60px}}
-.divider{height:1px;background:#EDECC6}
+.divider{height:1px;background:#E3EBD2}
 </style>
 </head>
 <body>
@@ -159,11 +159,11 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
       </h1>
       <p class="hero-desc anim-2">
         <strong style="font-size:1.15em;letter-spacing:-.01em">Tu salud se entrena. Potencia tu Bienestar</strong><br>
-        <span style="display:block;margin-top:6px">Una propuesta de entrenamiento pensada para fortalecer tu cuerpo, mejorar tu calidad de vida y acompañarte con una forma de entrenar que realmente se adapte a vos.</span>
+        <span style="display:block;margin-top:6px">Distintas propuestas para fortalecer tu cuerpo, desarrollar tus capacidades físicas y mejorar tu calidad de vida. Un espacio donde el movimiento, el acompañamiento profesional y las experiencias se unen para ayudarte a encontrar la actividad que mejor se adapte a vos.</span>
       </p>
       <div class="anim-3">
         <a href="#contacto" class="hero-cta">Reserva tu clase <span>↗</span></a>
-        <div style="margin-top:10px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;opacity:.85">Pilates Reformer · Funcional · Musculación</div>
+        <div style="margin-top:10px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;opacity:.85">Pilates Reformer - Funcional - Fuerza - Outdoor - Yoga Facial</div>
       </div>
     </div>
   </div>
@@ -185,11 +185,13 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
     <div class="sobre-text">
       <h3>Vení a vivir la experiencia en Centro Acqua GB</h3>
       <p>Somos un equipo de profesionales de Educación Física, especializados en las diferentes propuestas que ofrecemos, para acompañarte de manera cercana y responsable.</p>
-      <p>Desde el 2009, construimos un espacio donde experiencia, cercanía y bienestar son parte de nuestra forma de acompañarte.</p>
+      <p>Desde 2009 construimos un espacio donde la experiencia profesional, la confianza y el bienestar forman parte de nuestra manera de acompañarte.</p>
+      <h4 style="font-family:'Instrument Serif',serif;font-size:22px;font-weight:400;margin:16px 0 10px;color:var(--green-900)">Nuestra filosofía</h4>
       <div class="sobre-list">
-        <div class="sobre-item"><i>✓</i><span><b style="font-family:'Instrument Serif',serif">Experiencia Profesional</b> - confianza y trayectoria</span></div>
-        <div class="sobre-item"><i>◐</i><span><b style="font-family:'Instrument Serif',serif">Grupos Reducidos</b> - Cercanía y atención</span></div>
-        <div class="sobre-item"><i>♥</i><span><b style="font-family:'Instrument Serif',serif">Bienestar Integral</b> - la filosofía de Centro Acqua</span></div>
+        <div class="sobre-item"><i>✓</i><span><b style="font-family:'Instrument Serif',serif">Experiencia y Trayectoria</b></span></div>
+        <div class="sobre-item"><i>◐</i><span><b style="font-family:'Instrument Serif',serif">Grupos reducidos y atención personalizada</b></span></div>
+        <div class="sobre-item"><i>♥</i><span><b style="font-family:'Instrument Serif',serif">Acompañamiento Profesional</b></span></div>
+        <div class="sobre-item"><i>✦</i><span><b style="font-family:'Instrument Serif',serif">Comunidad y Bienestar Integral</b></span></div>
       </div>
       <p style="font-family:'Instrument Serif',serif;font-size:18px;font-style:italic;color:var(--green-900);margin-top:14px">Tu Cuerpo cambia, tu forma de vivirlo también.</p>
       <div class="sobre-actions">
@@ -205,8 +207,8 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
 <section class="section" id="servicios">
   <div class="section-head">
     <span class="kicker">Nuestros servicios</span>
-    <h2 class="h2">Encontrá la <em>propuesta para vos</em></h2>
-    <p class="lead">Cuatro formas de entrenar, un mismo objetivo: ayudarte a sentirte mejor.</p>
+    <h2 class="h2">Encontrá tu forma de <em>moverte, entrenar y sentirte mejor</em></h2>
+    <p class="lead">Distintas propuestas, un mismo propósito: acompañarte a mejorar tu calidad de vida en cada etapa.</p>
   </div>
   <div class="services-grid">
     <article class="card">
@@ -216,8 +218,8 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
       </div>
       <div class="card-body">
         <h3>Estudio Pilates Reformer</h3>
-        <p>Grupos reducidos para brindarte una atención más personalizada. Nuestro Estudio cuenta con Reformers, Correctores Espinales, Combo Chair, Pilates Mat y mucho más para ofrecerte una experiencia integral de movimiento.</p>
-        <div class="card-meta"><span>Grupos reducidos</span><span class="card-arrow">↗</span></div>
+        <p>Fuerza, control y flexibilidad en un entrenamiento integral de bajo impacto. Nuestro estudio cuenta con Reformer, Combo Chair y Correctores Espinales para trabajar el cuerpo con precisión y acompañamiento profesional.</p>
+        <div class="card-meta"><span>Grupos reducidos · Clases de 55´</span><span class="card-arrow">↗</span></div>
       </div>
     </article>
     <article class="card">
@@ -227,8 +229,8 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
       </div>
       <div class="card-body">
         <h3>Entrenamiento Funcional</h3>
-        <p>Circuitos dinámicos de fuerza, movilidad y cardio. Entrenamiento grupal, motivador y adaptable a tu condición física. Sesiones de 55´.</p>
-        <div class="card-meta"><span>Circuitos · 55´</span><span class="card-arrow">↗</span></div>
+        <p>Circuitos dinámicos que combinan fuerza, movilidad, coordinación y resistencia. Una propuesta grupal, motivadora y adaptable a diferentes condiciones físicas.</p>
+        <div class="card-meta"><span>Entrenamiento grupal · Clases 55´</span><span class="card-arrow">↗</span></div>
       </div>
     </article>
     <article class="card">
@@ -237,20 +239,32 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
         <span class="card-tag">Musculación</span>
       </div>
       <div class="card-body">
-        <h3>Sala de Musculación</h3>
-        <p>Vení a entrenar tu fuerza y mejorar tu condición física. Entrenamientos adaptados a tus objetivos y necesidades, para mujeres y hombres de diferentes edades, con acompañamiento profesional.</p>
+        <h3>Fuerza</h3>
+        <p>Entrená tu fuerza, desarrollá tus capacidades físicas y mejorá tu condición física. Propuestas para mujeres y hombres de diferentes edades con rutinas adaptadas a tus objetivos y acompañamiento profesional.</p>
         <div class="card-meta"><span>Entrenamientos personalizados</span><span class="card-arrow">↗</span></div>
       </div>
     </article>
     <article class="card">
       <div class="card-img">
-        <img src="outdoor.jpg" alt="Actividades al Aire libre - Trekking y Running">
-        <span class="card-tag">Outdoor</span>
+        <img src="outdoor-1.jpg" alt="Actividades al Aire libre - Trekking y Running">
+        <span class="card-tag">Acqua Outdoor</span>
       </div>
       <div class="card-body">
-        <h3>Actividad al Aire Libre</h3>
-        <p>Trekking y Running para fortalecer tu cuerpo y tu mente, disfrutar del movimiento y conectar con la naturaleza. Una propuesta para salir de la rutina y animarte a nuevos desafíos.</p>
-        <div class="card-meta"><span>Trekking · Running</span><span class="card-arrow">↗</span></div>
+        <h3>Actividades al Aire Libre</h3>
+        <p>Caminatas, running y trekking para fortalecer tu cuerpo y tu mente, disfrutar del movimiento y conectar con la naturaleza. Una propuesta para salir de la rutina, compartir experiencias y animarte a nuevos desafíos, respetando tu propio ritmo.</p>
+        <div class="card-meta"><span>Comunidad - nuevas experiencias</span><span class="card-arrow">↗</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-img">
+        <img src="yoga-facial.jpg" alt="Yoga Facial - bienestar del rostro">
+        <span class="card-tag">Yoga Facial</span>
+      </div>
+      <div class="card-body">
+        <h3>Yoga Facial</h3>
+        <p style="margin:-2px 0 8px;font-weight:700;color:var(--green-900);flex:none">Entrena tu rostro, libera tensiones y rejuvenece tu expresión.</p>
+        <p>Una propuesta de técnicas faciales naturales y no invasivas que combina ejercicios, masajes y técnicas de relajación para activar, tonificar y relajar los músculos del rostro, ayudando a desinflamar, liberar tensiones y cuidar tu piel.<br><br>Una forma de conectar con tu rostro y acompañar tu belleza natural.</p>
+        <div class="card-meta"><span>Talleres presenciales - Programa Online</span><span class="card-arrow">↗</span></div>
       </div>
     </article>
   </div>
@@ -321,7 +335,7 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
           <div style="width:42px;height:42px;border-radius:10px;overflow:hidden;background:#fff;padding:2px"><img src="logo.png" alt="Centro Acqua" onerror="this.src='logo-acqua.jpg'" style="width:100%;height:100%;object-fit:contain"></div>
           <b>Centro Acqua<br><span style="font-weight:400;opacity:.7;font-size:13px">Grand Bourg</span></b>
         </div>
-        <p>Centro de Bienestar. Pilates Reformer · Funcional · Musculación · Actividades en la Naturaleza. Desde 2009.</p>
+        <p>Centro de Bienestar. Pilates Reformer · Funcional · Fuerza · Actividades al Aire Libre · Yoga Facial. Desde 2009.</p>
         <div class="socials">
           <a href="https://wa.me/5491158256568?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20las%20clases%20de" target="_blank" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94A9.82 9.82 0 0 0 12.04 2C6.54 2 2.04 6.5 2.04 12c0 1.76.46 3.48 1.33 4.99L2 22l5.14-1.35A9.82 9.82 0 0 0 12.04 22c5.5 0 10-4.5 10-10 0-2.67-1.04-5.18-2.99-7.06ZM12.04 20c-1.5 0-2.97-.4-4.24-1.16l-.3-.18-3.05.8.81-2.97-.2-.31A8 8 0 0 1 4 12c0-4.41 3.59-8 8.04-8 2.14 0 4.16.84 5.68 2.35A7.98 7.98 0 0 1 20.04 12c0 4.41-3.59 8-8 8Zm6.55-5.99c-.36-.18-2.13-1.05-2.46-1.17-.33-.12-.57-.18-.81.18-.24.36-.93 1.17-1.14 1.41-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.9-1.79-1.07-.95-1.79-2.13-2-2.49-.21-.36-.02-.55.16-.73.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.61-.81-.62h-.69c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3 0 1.77 1.29 3.48 1.47 3.72.18.24 2.54 3.88 6.15 5.44.86.37 1.53.59 2.05.76.86.27 1.64.23 2.26.14.69-.1 2.13-.87 2.43-1.71.3-.84.3-1.56.21-1.71-.09-.15-.33-.24-.69-.42Z"/></svg></a>
           <a href="https://instagram.com/centroacquagrandbourg" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
@@ -337,10 +351,11 @@ footer::before{content:"";position:absolute;inset:0;background:radial-gradient(6
       </div>
       <div class="footer-col">
         <h4>Servicios</h4>
-        <span>Pilates Reformer</span>
+        <span>Estudio Pilates Reformer</span>
         <span>Entrenamiento Funcional</span>
-        <span>Salón de Musculación</span>
-        <span>Actividades en la Naturaleza</span>
+        <span>Fuerza</span>
+        <span>Actividades al Aire Libre</span>
+        <span>Yoga Facial</span>
       </div>
       <div class="footer-col">
         <h4>Contacto</h4>
